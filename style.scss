@@ -1,0 +1,169 @@
+$backraund-color: #fff;
+$color-text: #e38528;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        background-color: #fcf2e8;
+    }
+}
+
+
+
+/* section-home */
+
+#home {
+    display: flex;
+}
+
+.home-navbar {
+    width: 10%;
+    height: 100vh;
+    background-color: #222;
+    box-shadow: 15px 0 70px #222;
+
+    .container {
+
+        text-align: center;
+
+        .navbar-logo {
+            position: relative;
+            width: 100px;
+            border-radius: 50%;
+            top: 50px;
+        }
+    }
+
+}
+
+.container nav ul {
+    position: relative;
+    margin-top: 100%;
+
+    li {
+        list-style: none;
+        margin-bottom: 50px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+    }
+}
+
+.container nav ul {
+    li {
+        a:hover {
+            color: $color-text;
+        }
+    }
+}
+
+.home-main {
+    width: 100%;
+    height: 100vh;
+
+    .home-main_image {
+        img {
+            width: 60%;
+            border-radius: 50%;
+            margin-top: -25%;
+        }
+    }
+}
+
+.home-main_container {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.home-main_text {
+    h3 {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 64px;
+
+        span {
+            color: $color-text;
+        }
+    }
+}
+
+/* section-home */
+
+/* section about */
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: #e1d8cf;
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+}
+
+.about-container_image {
+    .about-image {
+        width: 80%;
+        border-radius: 25px;
+        box-shadow: 20px 20px 60px #222;
+    }
+
+    width: 40%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.about-container_text {
+
+    .text_1,
+    .text_2,
+    .text_3 {
+        h2 {
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        width: 30%;
+    }
+
+    width: 60%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    padding: 0 5% 0 5%;
+}
+
+.text_1,
+.text_2,
+.text_3 {
+    p {
+        span {
+            color: $color-text;
+            font-style: italic;
+        }
+
+        font-size: 17px;
+    }
+}
+
+/* section about */
